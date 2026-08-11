@@ -2,9 +2,12 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_swap.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
+/*                                                    +:+ +:+
+	+:+     */
+/*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+
+	+#+        */
+/*                                                +#+#+#+#+#+
+	+#+           */
 /*   Created: 2026/08/06 13:16:20 by yasel-ma          #+#    #+#             */
 /*   Updated: 2026/08/06 13:25:46 by yasel-ma         ###   ########.fr       */
 /*                                                                            */

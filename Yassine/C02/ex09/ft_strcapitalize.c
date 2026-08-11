@@ -6,7 +6,7 @@
 /*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/10 15:39:11 by yasel-ma          #+#    #+#             */
-/*   Updated: 2026/08/10 15:39:11 by yasel-ma         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:16:14 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,23 @@ char	ft_strcapitalize(char *str)
 	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
-		if(str[i] >= 97 && str[i] <= 122)
+		if (str[i] >= 97 && str[i] <= 122)
 		{
-			if(i == 0 || (str[i - 1] < 48 || (str[i - 1] > 57 && str[i - 1] < 65) || (str[i - 1] > 90 && str[i - 1] < 97) || str[i - 1] > 122))
+			if (i == 0 || (str[i - 1] < 48 || (str[i - 1] > 57 && str[i
+						- 1] < 65) || (str[i - 1] > 90 && str[i - 1] < 97)
+					|| str[i - 1] > 122))
 				str[i] -= 32;
 		}
-		else if(str[i] >= 65 && str[i] <= 90)
+		else if (str[i] >= 65 && str[i] <= 90)
 		{
-			if(i != 0 && ((str[i - 1] >= 48 && str[i - 1] <= 57) || (str[i - 1] >= 65 && str[i - 1] <= 90) || (str[i - 1] >= 97 && str[i - 1] <= 122)))
+			if (i != 0 && ((str[i - 1] >= 48 && str[i - 1] <= 57) || (str[i
+						- 1] >= 65 && str[i - 1] <= 90) || (str[i - 1] >= 97
+						&& str[i - 1] <= 122)))
 				str[i] += 32;
 		}
 		i++;
 	}
-	return(str);
+	return (str);
 }

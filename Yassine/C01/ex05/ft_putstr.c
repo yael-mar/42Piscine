@@ -2,9 +2,12 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
+/*                                                    +:+ +:+
+	+:+     */
+/*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+
+	+#+        */
+/*                                                +#+#+#+#+#+
+	+#+           */
 /*   Created: 2026/08/07 11:45:07 by yasel-ma          #+#    #+#             */
 /*   Updated: 2026/08/07 11:45:07 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
@@ -12,7 +15,7 @@
 
 #include <unistd.h>
 
-void ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
 	int	i;
 

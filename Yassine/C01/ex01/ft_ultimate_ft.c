@@ -2,9 +2,12 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
+/*                                                    +:+ +:+
+	+:+     */
+/*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+
+	+#+        */
+/*                                                +#+#+#+#+#+
+	+#+           */
 /*   Created: 2026/08/06 12:29:33 by yasel-ma          #+#    #+#             */
 /*   Updated: 2026/08/06 12:29:34 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
