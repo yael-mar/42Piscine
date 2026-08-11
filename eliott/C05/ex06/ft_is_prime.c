@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elprocur <elprocur@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/11 10:50:38 by elprocur          #+#    #+#             */
-/*   Updated: 2026/08/11 11:11:08 by elprocur         ###   ########.fr       */
+/*   Created: 2026/08/11 15:59:45 by elprocur          #+#    #+#             */
+/*   Updated: 2026/08/11 16:06:43 by elprocur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int    ft_recursive_factorial(int nb)
+int	ft_is_prime(int nb)
 {
-    if (nb < 0)
-        return (0);
-    if (nb == 0 || nb == 1)
-        return (1);
-    return (nb * ft_recursive_factorial(nb - 1));
+	int i;
+
+	i = 2;
+	if (nb <= 1)
+		return (0);
+	while (i < nb)
+	{
+		if (nb % i == 0)
+			return (0);
+		i++;
+	}
+	return (1);
 }
-/*
-int main(void)
-{
-    printf("%d\n", ft_recursive_factorial(5));
-    return (0);
-}
-*/
