@@ -2,9 +2,12 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
+/*                                                    +:+ +:+
+	+:+     */
+/*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+
+	+#+        */
+/*                                                +#+#+#+#+#+
+	+#+           */
 /*   Created: 2026/08/07 11:48:24 by yasel-ma          #+#    #+#             */
 /*   Updated: 2026/08/07 11:48:24 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
@@ -17,5 +20,5 @@ int	ft_strlen(char *str)
 	i = 0;
 	while (str[i] != '\0')
 		i++;
-	return(i);
+	return (i);
 }

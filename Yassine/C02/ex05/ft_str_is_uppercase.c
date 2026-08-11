@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/07 11:45:07 by yasel-ma          #+#    #+#             */
-/*   Updated: 2026/08/07 11:45:07 by yasel-ma         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:30:45 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_str_is_numeric(char *str)
+int	ft_str_is_uppercase(char *str)
 {
 	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
-		if(str[i] < 65 || str[i] > 90)
-			return(0);
+		if (str[i] < 65 || str[i] > 90)
+			return (0);
 		i++;
 	}
-	return(1);
+	return (1);
 }

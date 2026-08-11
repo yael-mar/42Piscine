@@ -6,14 +6,14 @@
 /*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/10 23:12:00 by yasel-ma          #+#    #+#             */
-/*   Updated: 2026/08/10 23:12:00 by yasel-ma         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:39:14 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int ft_strlcpy(char *dest, char *src, unsigned int size)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	unsigned int i;
-	unsigned int res;
+	unsigned int	i;
+	unsigned int	res;
 
 	i = 0;
 	res = 0;

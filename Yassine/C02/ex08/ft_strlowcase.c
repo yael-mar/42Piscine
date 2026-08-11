@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowercase.c                                  :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/10 13:53:19 by yasel-ma          #+#    #+#             */
-/*   Updated: 2026/08/10 13:53:19 by yasel-ma         ###   ########.fr       */
+/*   Created: 2026/08/11 11:33:06 by yasel-ma          #+#    #+#             */
+/*   Updated: 2026/08/11 11:33:11 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-ft_strlowercase(char *str)
+char	*ft_strlowcase(char *str)
 {
 	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
-		if(str[i] >= 65 && str[i] <= 90)
+		if (str[i] >= 65 && str[i] <= 90)
 			str[i] += 32;
 		i++;
 	}
-	return(str);
+	return (str);
 }

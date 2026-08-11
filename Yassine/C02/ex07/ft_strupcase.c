@@ -6,21 +6,20 @@
 /*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/10 13:51:31 by yasel-ma          #+#    #+#             */
-/*   Updated: 2026/08/10 13:51:31 by yasel-ma         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:39:51 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strupcase(char *str)
-
+char	*ft_strupcase(char *str)
 {
 	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
-		if(str[i] >= 97 && str[i] <= 122)
+		if (str[i] >= 97 && str[i] <= 122)
 			str[i] -= 32;
 		i++;
 	}
-	return(str);
+	return (str);
 }
