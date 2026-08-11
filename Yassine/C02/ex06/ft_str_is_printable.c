@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/07 11:48:24 by yasel-ma          #+#    #+#             */
-/*   Updated: 2026/08/07 11:48:24 by yasel-ma         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:38:49 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_str_is_printable(char *str)
+int	ft_str_is_printable(char *str)
 {
 	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
-		if(str[i] < 32 || str[i] > 126)
-			return(0);
+		if (str[i] < 32 || str[i] > 126)
+			return (0);
 		i++;
 	}
-	return(1);
+	return (1);
 }

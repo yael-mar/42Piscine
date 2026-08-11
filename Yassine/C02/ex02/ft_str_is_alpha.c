@@ -6,7 +6,7 @@
 /*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/10 13:11:53 by yasel-ma          #+#    #+#             */
-/*   Updated: 2026/08/10 13:11:53 by yasel-ma         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:24:24 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ int	ft_str_is_alpha(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if(str[i] < 65 || (str[i] > 90 && c < 97) || str[i] > 122)
-			return(0);
+		if (str[i] < 65 || (str[i] > 90 && str[i] < 97) || str[i] > 122)
+			return (0);
 		i++;
 	}
-	return(1);
+	return (1);
 }

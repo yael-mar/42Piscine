@@ -6,11 +6,11 @@
 /*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/10 11:41:15 by yasel-ma          #+#    #+#             */
-/*   Updated: 2026/08/10 11:41:15 by yasel-ma         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:39:56 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
 	int	i;
 
@@ -21,5 +21,5 @@ char *ft_strcpy(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	return(dest);
+	return (dest);
 }
