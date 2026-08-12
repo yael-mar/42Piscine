@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
+/*   ft_sqrt.C                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elprocur <elprocur@student.42belgium.be    +#+  +:+       +#+        */
+/*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/11 15:49:07 by elprocur          #+#    #+#             */
-/*   Updated: 2026/08/11 16:06:38 by elprocur         ###   ########.fr       */
+/*   Created: 2026/08/12 17:29:48 by yasel-ma          #+#    #+#             */
+/*   Updated: 2026/08/12 17:29:48 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_fibonacci(int index)
+int	ft_sqrt(int nb)
 {
-	if (index < 0)
-		return (-1);
-	if (index == 0)
+	int	i;
+
+	i = 0;
+	if (nb < 0)
 		return (0);
-	if (index == 1)
-		return (1);
-	return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
+	while (i * i < nb)
+		i++;
+	if (i * i == nb)
+		return (i);
+	else
+		return (0);
 }
-/*
-#include <stdio.h>
-int	main()
-{
-	printf("%d\n", ft_fibonacci(1));
-}
-*/

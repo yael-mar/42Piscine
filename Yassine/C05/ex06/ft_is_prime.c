@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elprocur <elprocur@student.42belgium.be    +#+  +:+       +#+        */
+/*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/11 15:49:07 by elprocur          #+#    #+#             */
-/*   Updated: 2026/08/11 16:06:38 by elprocur         ###   ########.fr       */
+/*   Created: 2026/08/12 17:30:30 by yasel-ma          #+#    #+#             */
+/*   Updated: 2026/08/12 17:30:30 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_fibonacci(int index)
+int	ft_is_prime(int nb)
 {
-	if (index < 0)
-		return (-1);
-	if (index == 0)
+	int i;
+
+	i = 2;
+	if (nb <= 1)
 		return (0);
-	if (index == 1)
-		return (1);
-	return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
+	while (i < nb)
+	{
+		if (nb % i == 0)
+			return (0);
+		i++;
+	}
+	return (1);
 }
-/*
-#include <stdio.h>
-int	main()
-{
-	printf("%d\n", ft_fibonacci(1));
-}
-*/
