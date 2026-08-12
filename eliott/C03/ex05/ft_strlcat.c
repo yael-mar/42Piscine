@@ -6,7 +6,7 @@
 /*   By: elprocur <elprocur@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/10 10:46:25 by elprocur          #+#    #+#             */
-/*   Updated: 2026/08/11 09:51:58 by elprocur         ###   ########.fr       */
+/*   Updated: 2026/08/12 10:31:14 by elprocur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,19 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	dest[i] = '\0';
 	return (dl + sl);
 }
+/*
+#include <stdio.h>
+int	main(void)
+{
+	char dest[50] = "Hello, ";
+	char src[] = "World!";
+	unsigned int size = 20;
+
+	printf("Before concatenation: %s\n", dest);
+	unsigned int result = ft_strlcat(dest, src, size);
+	printf("After concatenation: %s\n", dest);
+	printf("Total length: %u\n", result);
+
+	return (0);
+}
+*/

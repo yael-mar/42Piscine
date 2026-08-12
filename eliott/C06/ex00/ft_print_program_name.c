@@ -1,43 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elprocur <elprocur@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/10 10:39:06 by elprocur          #+#    #+#             */
-/*   Updated: 2026/08/12 10:27:02 by elprocur         ###   ########.fr       */
+/*   Created: 2026/08/12 10:37:55 by elprocur          #+#    #+#             */
+/*   Updated: 2026/08/12 10:56:53 by elprocur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src)
+#include <unistd.h>
+
+int	main(int argc, char **argv)
 {
 	int	i;
-	int	j;
 
 	i = 0;
-	while (dest[i] != '\0')
-		i++;
-	j = 0;
-	while (src[j] != '\0')
+	(void)argc;
+	while (argv[0][i] != '\0')
 	{
-		dest[i + j] = src[j];
-		j++;
+		write(1, &argv[0][i], 1);
+		i++;
 	}
-	dest[i + j] = '\0';
-	return (dest);
-}
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char dest[50] = "Hello, ";
-	char src[] = "World!";
-
-	printf("Before concatenation: %s\n", dest);
-	ft_strcat(dest, src);
-	printf("After concatenation: %s\n", dest);
-
+	write(1, "\n", 1);
 	return (0);
-	*/
+}
