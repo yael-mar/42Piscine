@@ -6,7 +6,7 @@
 /*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 16:10:45 by yasel-ma          #+#    #+#             */
-/*   Updated: 2026/08/12 16:10:45 by yasel-ma         ###   ########.fr       */
+/*   Updated: 2026/08/13 14:49:02 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 		i++;
-	return(i);
+	return (i);
 }

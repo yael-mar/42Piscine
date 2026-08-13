@@ -6,13 +6,13 @@
 /*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 17:30:30 by yasel-ma          #+#    #+#             */
-/*   Updated: 2026/08/12 17:30:30 by yasel-ma         ###   ########.fr       */
+/*   Updated: 2026/08/13 14:57:20 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_is_prime(int nb)
 {
-	int i;
+	int	i;
 
 	i = 2;
 	if (nb <= 1)
