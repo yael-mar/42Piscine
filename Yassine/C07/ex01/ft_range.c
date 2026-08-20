@@ -1,36 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/12 16:19:48 by yasel-ma          #+#    #+#             */
-/*   Updated: 2026/08/20 14:19:48 by yasel-ma         ###   ########.fr       */
+/*   Created: 2026/08/20 13:41:28 by yasel-ma          #+#    #+#             */
+/*   Updated: 2026/08/20 13:41:48 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
-{
-	int	i;
-	int	s;
-	int	r;
+#include <stdlib.h>
 
-	i = 0;
-	s = 1;
-	r = 0;
-	while (str[i] == ' ' || str[i] >= 9 || str[i] <= 13)
-		i++;
-	while (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-			s -= s;
-		i++;
-	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		r = r * 10 + (str[i] - '0');
-		i++;
-	}
-	return (r * s);
+int	*ft_range(int min, int max)
+{
+	
 }

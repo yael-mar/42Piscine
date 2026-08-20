@@ -1,36 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yasel-ma <elmardiyassine00@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/12 16:19:48 by yasel-ma          #+#    #+#             */
-/*   Updated: 2026/08/20 14:19:48 by yasel-ma         ###   ########.fr       */
+/*   Created: 2026/08/20 11:45:09 by yasel-ma          #+#    #+#             */
+/*   Updated: 2026/08/20 13:53:13 by yasel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+#include <stdlib.h>
+
+int	ft_strlen(char *str)
 {
 	int	i;
-	int	s;
-	int	r;
 
 	i = 0;
-	s = 1;
-	r = 0;
-	while (str[i] == ' ' || str[i] >= 9 || str[i] <= 13)
+	while (str[i] != '\0')
 		i++;
-	while (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-			s -= s;
-		i++;
-	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		r = r * 10 + (str[i] - '0');
-		i++;
-	}
-	return (r * s);
+	return (i);
 }
+
+char	*ft_strdup(char *src)
+{
+	char	*dst;
+	int		i;
+
+	dst = malloc(sizeof(char) + ft_strlen(src) + 1);
+	i = 0;
+	if (src == NULL)
+		return (NULL);
+	if (dst == NULL)
+		return (NULL);
+	while (src[i])
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = 0;
+	return (dst);
+}
+/*
+#include <stdio.h>
+int	main()
+{
+	printf("%s\n", ft_strdup("Hello"));
+}
+*/
